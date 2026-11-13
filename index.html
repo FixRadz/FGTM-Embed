@@ -1,16 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta name="theme-color" content="#ffffff">
+
   <title>Dashboard FGTM UP3 Garut 2026</title>
+
   <link rel="icon" type="image/png" href="/favicon.png">
+
   <style>
-    html, body { margin: 0; height: 100%; }
-    iframe { border: 0; width: 100%; height: 100%; display: block; }
+    /* =========================
+       GLOBAL RESET
+    ========================= */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      position: fixed;
+      inset: 0;
+      background: #ffffff;
+      overscroll-behavior: none;
+    }
+
+    /* =========================
+       DASHBOARD FRAME
+    ========================= */
+
+    .dashboard-frame {
+      position: fixed;
+      inset: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+
+      margin: 0;
+      padding: 0;
+      border: none;
+
+      background: #ffffff;
+
+      pointer-events: auto;
+    }
+
+    /* =========================
+       VIEWPORT FALLBACK
+    ========================= */
+
+    @supports not (height: 100dvh) {
+      .dashboard-frame {
+        height: 100vh;
+      }
+    }
+
   </style>
 </head>
+
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycby6NJqh8G2Nm4GlTZUC8qe2YJ-LoHPSvtmhJydNM_m8W35fGSDR-IhoW9fuXpTCkupq/exec" allow="clipboard-write; fullscreen"></iframe>
+
+  <iframe
+    class="dashboard-frame"
+    src="https://script.google.com/macros/s/AKfycby6NJqh8G2Nm4GlTZUC8qe2YJ-LoHPSvtmhJydNM_m8W35fGSDR-IhoW9fuXpTCkupq/exec"
+    title="Dashboard FGTM UP3 Garut"
+    allow="clipboard-write; fullscreen"
+    allowfullscreen>
+  </iframe>
+
 </body>
 </html>
